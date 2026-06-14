@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light — Indian boutique: sandalwood, marigold, saffron & gulabi rose */
+  --c-bg: #F3DEB3;
+  --c-bg-glow: #FBC58F;
+  --c-blob-blush: #F0789E;
+  --c-blob-gold: #EE9A2A;
+  --c-surface-1: #FCF1DC;
+  --c-surface-2: #F8E1C2;
+  --c-surface-translucent: rgba(252, 241, 220, 0.76);
+  --c-ink: #42201A;
+  --c-ink-soft: #7C463A;
+  --c-muted: #9A6850;
+  --c-muted-faint: #B58C74;
+  --c-eyebrow: #C2410C;
+  --c-border: rgba(214, 130, 40, 0.38);
+  --c-border-strong: rgba(214, 130, 40, 0.72);
+  --c-card-shadow: 0 2px 24px rgba(214, 130, 40, 0.14), 0 1px 4px rgba(74, 32, 20, 0.08);
+  --c-card-shadow-hover: 0 8px 32px rgba(214, 130, 40, 0.22), 0 2px 8px rgba(74, 32, 20, 0.10);
+  --c-scroll-thumb: #DC6F8C;
+  --c-step-num: rgba(194, 65, 12, 0.28);
+}
+
+:root.dark {
+  /* Dark — candle-lit evening garden (warm plum-charcoal) */
+  --c-bg: #1B1419;
+  --c-bg-glow: #2C1F2C;
+  --c-blob-blush: #6E3A52;
+  --c-blob-gold: #5E4A28;
+  --c-surface-1: #271E26;
+  --c-surface-2: #2E2230;
+  --c-surface-translucent: rgba(46, 34, 44, 0.60);
+  --c-ink: #F5EDE6;
+  --c-ink-soft: #D6C6BC;
+  --c-muted: #AD9A8E;
+  --c-muted-faint: #8A7A70;
+  --c-eyebrow: #E8C97A;
+  --c-border: rgba(232, 201, 122, 0.30);
+  --c-border-strong: rgba(232, 201, 122, 0.65);
+  --c-card-shadow: 0 6px 28px rgba(0, 0, 0, 0.45);
+  --c-card-shadow-hover: 0 12px 38px rgba(0, 0, 0, 0.55);
+  --c-scroll-thumb: #7A3B55;
+  --c-step-num: rgba(232, 201, 122, 0.34);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--c-bg);
+  color: var(--c-ink);
+  font-family: 'EB Garamond', Georgia, serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Royal wordmark refinement */
+.font-display {
+  letter-spacing: 0.01em;
+}
+
+/* Cursive wordmark */
+.font-script {
+  letter-spacing: 0.02em;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--c-bg); }
+::-webkit-scrollbar-thumb { background: var(--c-scroll-thumb); border-radius: 3px; }
+
+/* Selection */
+::selection { background: #F4A2BC; color: #42201A; }

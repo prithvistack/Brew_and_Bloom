@@ -1,0 +1,20 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm install *)",
+      "Bash(npm run *)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(cd \"/c/Users/COMP/Desktop/brew and bloom\" && rm -rf node_modules/.vite && echo cleared)",
+      "Bash(curl -s \"http://localhost:5173/src/index.css\")",
+      "Read(//c/c/Users/COMP/Desktop/**)",
+      "Bash(netstat -ano)",
+      "Bash(tasklist)",
+      "Bash(curl -s http://localhost:5173/src/index.css?b=__TRACKED_VAR__)",
+      "Bash(node --input-type=module -e ' *)",
+      "Bash(taskkill //PID 12596 //F)",
+      "PowerShell(try { Stop-Process -Id 12596 -Force -ErrorAction Stop; Write-Output \"killed 12596\" } catch { Write-Output \\(\"kill-failed: \" + $_.Exception.Message\\) }; Start-Sleep -Milliseconds 800; $c = Get-NetTCPConnection -LocalPort 5173 -State Listen -ErrorAction SilentlyContinue; if\\($c\\){ Write-Output \\(\"still-listening PID=\" + $c.OwningProcess\\) } else { Write-Output \"PORT_FREE\" })",
+      "Bash(Stop-Process -Id 12548 -Force)",
+      "PowerShell(Stop-Process -Id 12548 -Force)"
+    ]
+  }
+}

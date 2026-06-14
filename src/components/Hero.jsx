@@ -89,7 +89,7 @@ export default function Hero() {
           {...fadeUp(0.22)}
         >
           <span className="block">Brew <span className="text-blush-400">&amp;</span></span>
-          <span className="block">Bloom ✨</span>   
+          <span className="block">Bloom </span>   
         </motion.h1>
 
         {/* Gold divider */}
